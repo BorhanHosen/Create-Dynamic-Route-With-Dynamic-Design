@@ -3,8 +3,8 @@ import React from "react";
 const AccessControlRequestFormEdit = () => {
   return (
     <div>
-      <h1>edit</h1>
-      AccessControlRequestFormEdit
+      <h3>edit</h3>
+      <h4>AccessControlRequestFormEdit</h4>
     </div>
   );
 };

@@ -1,23 +1,12 @@
-// src/components/DynamicFormLoader.js
 import React from "react";
-import AccessRightsRequestForm from "./AccessRightsRequestForm";
-import AccessControlRequestForm from "./AccessControlRequestForm";
 import ChangeRequestForm from "./ChangeRequestForm";
-import AccessControlRequestFormEdit from "./AccessControlRequestFormEdit";
-import AccessRightsRequestFormEdit from "./AccessRightsRequestFormEdit";
 import ChangeRequestFormEdit from "./ChangeRequestFormEdit";
+import AccessRightsRequestForm from "./AccessRightsRequestForm";
+import AccessRightsRequestFormEdit from "./AccessRightsRequestFormEdit";
+import AccessControlRequestForm from "./AccessControlRequestForm";
+import AccessControlRequestFormEdit from "./AccessControlRequestFormEdit";
 
-const DynamicFormLoader = ({ formId, type }) => {
-  //   switch (formId) {
-  //     case "1001":
-  //       return <AccessRightsRequestForm data={data} />;
-  //     case "1002":
-  //       return <AccessControlRequestForm data={data} />;
-  //     case "1003":
-  //       return <ChangeRequestForm data={data} />;
-  //     default:
-  //       return <div>Form not found</div>;
-  //   }
+const DynamicFormLoader = ({ formId, type, requestid }) => {
   switch (true) {
     case formId === "1001" && type === "view":
       return <AccessRightsRequestForm />;

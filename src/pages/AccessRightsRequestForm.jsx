@@ -1,7 +1,12 @@
 import React from "react";
 
 const AccessRightsRequestForm = () => {
-  return <div>AccessRightsRequestForm</div>;
+  return (
+    <div>
+      <h3>View</h3>
+      <h4>AccessRightsRequestForm</h4>
+    </div>
+  );
 };
 
 export default AccessRightsRequestForm;
