@@ -5,7 +5,7 @@ const data = [
     formname: "Access Rights Request Form",
     userid: "06344",
     username: "Borhan Hosen",
-    unitheadstatus: "pending",
+    unitheadstatus: "rejected",
     drheadstatus: null,
     isrmheadstatus: "Pending",
     implunitheadstatus: null,

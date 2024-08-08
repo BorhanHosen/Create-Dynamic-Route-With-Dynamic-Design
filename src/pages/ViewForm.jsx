@@ -1,15 +1,15 @@
 // src/components/ViewForm.js
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import DynamicFormLoader from "./DynamicFormLoader";
 
 const ViewForm = () => {
-  const { formid, type, requestid } = useParams();
+  const { formId, type } = useParams();
 
   return (
     <div>
-      {formid ? (
-        <DynamicFormLoader formId={formid} type={type} requestid={requestid} />
+      {formId ? (
+        <DynamicFormLoader formId={formId} type={type} />
       ) : (
         <p>Loading...</p>
       )}
